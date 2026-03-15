@@ -89,7 +89,8 @@ li {
     padding: 10px 0;
 }
 
-.nav-menu a:hover, .nav-menu a.active {
+.nav-menu a:hover {
+    text-decoration: underline !important;
     color: #28a745;
 }
 
@@ -213,11 +214,11 @@ li {
 .breadcrumb-clean a {
     color: #28a745;
     transition: 0.3s;
-    font-weight: 500;
+    /* font-weight: 500; */
 }
 
 .breadcrumb-clean a:hover {
-    text-decoration: underline;
+    text-decoration: underline !important;
     color: #1e7e34;
 }
 
@@ -230,7 +231,7 @@ li {
 .container-product {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 20px 80px 20px;
+    padding: 20px;
     width: 100%;
 }
 

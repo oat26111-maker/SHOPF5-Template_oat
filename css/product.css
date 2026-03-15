@@ -85,7 +85,7 @@ li {
     padding: 10px 0;
 }
 
-.nav-menu a:hover, .nav-menu a.active {
+.nav-menu a:hover{
     color: #28a745;
 }
 
