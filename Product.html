@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ต้นไม้บ้านสุวรรณ -รายละเอียดสินค้า</title>
+    
+    <link rel="icon" type="image/x-icon" href="assets/icons/logo_1.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+    <link href="css/product.css" rel="stylesheet" />
+    <!-- Script -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/product.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="nav-brand" href="Index.html"> 
+                <img src="assets/icons/logo_1.png" alt="Logo">
+                <span class="brand-name">ต้นไม้บ้านสุวรรณ</span>
+            </a>
+            
+           <ul class="nav-menu">
+                <li><a href="Index.html" class="active">หน้าหลัก</a></li>
+                <li><a href="#">เกี่ยวกับเรา</a></li>
+                <li class="dropdown">
+                    <a href="#">หมวดหมู่ต้นไม้ <i class="bi-chevron-down" style="font-size: 12px;"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">ไม้คลุมดิน</a></li>
+                        <li><a href="#">ไม้ล้มลุก</a></li>
+                        <li><a href="#">ไม้พุ่ม</a></li>
+                        <li><a href="#">ไม้ยืนต้น</a></li>
+                        <li><a href="#">ไม้เลื้อย</a></li>
+                        <li><a href="#">ไม้ประดับอื่น ๆ</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="ค้นหาสินค้าที่ต้องการ...">
+                    <button class="btn-search"><i class="bi-search"></i></button>
+                </div>
+                 <a href="Cart.html" class="btn-cart" target="_blank">
+                    <i class="bi-cart-fill"></i> Cart
+                    <span class="cart-badge">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="breadcrumb-clean">
+            <a href="Index.html">หน้าหลัก</a> > <a href="#">หมวดหมู่ไม้เลื้อย</a> > 
+            <span>ตีนตุ๊กแกฝรั่ง</span>
+        </div>
+    </div>
+
+    <main class="product-detail-section">
+        <div class="container product-detail-layout">
+            
+            <div class="product-image-box">
+                <img src="assets/img/products/ตีนตุ๊กแกฝรั่ง.webp" alt="ตีนตุ๊กแกฝรั่ง">
+            </div>
+
+            <div class="product-info-box">
+                <h1 class="detail-title">ตีนตุ๊กแกฝรั่ง (Hedera helix)</h1>
+                <div class="detail-price">50฿</div>
+                
+                <p class="detail-description">
+                    ตีนตุ๊กแกฝรั่ง (English Ivy) ไม้เลื้อยยอดฮิต ปลูกในกระถางแขวนให้ห้อยระย้า หรือเลื้อยเกาะผนังก็คลาสสิก ช่วยฟอกอากาศได้ดี
+                </p>
+
+                <div class="purchase-actions">
+                    <div class="quantity-selector">
+                        <button class="qty-btn" onclick="document.getElementById('qty-input').stepDown()">-</button>
+                        <input type="number" id="qty-input" value="1" min="1" class="qty-input">
+                        <button class="qty-btn" onclick="document.getElementById('qty-input').stepUp()">+</button>
+                    </div>
+                    <button class="btn-add-to-cart-large" onclick="addToCart(3)">
+                        <i class="bi-cart-plus"></i> ใส่ตะกร้าสินค้า
+                    </button>
+                </div>
+
+                <div class="care-guide">
+                    <h3>วิธีดูแลรักษา:</h3>
+                    <ul>
+                        <li><i class="bi-brightness-high care-icon" style="color: #ffc107;"></i> <span><strong>แสงแดด:</strong> ชอบแสงแดดรำไรถึงแสงจ้า</span></li>
+                        <li><i class="bi-droplet care-icon" style="color: #0dcaf0;"></i> <span><strong>การรดน้ำ:</strong> รดน้ำเมื่อดินหน้าเริ่มแห้ง</span></li>
+                        <li><i class="bi-wind care-icon" style="color: #6c757d;"></i> <span><strong>อากาศ:</strong> ปลูกในที่ที่อากาศถ่ายเทสะดวก</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="related-section">
+        <div class="container">
+            <h2 class="section-heading">สินค้าอื่นๆ ที่เกี่ยวข้อง</h2>
+            <hr class="heading-line">
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <span class="badge-sale">Sale</span>
+                    <img src="assets/img/products/ต้นพลูสนิม.webp" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">พลูสนิม</h3>
+                        <p class="product-price">50฿</p>
+                        <div class="product-actions">
+                            <button class="btn-details" onclick="window.location.href='Product.html'">View Details</button>
+                            <button class="btn-add-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/img/products/ต้นลิ้นมังกร.jpg" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">ลิ้นมังกร</h3><p class="product-price">50฿</p>
+                        <div class="product-actions"><button class="btn-details">View Details</button><button class="btn-add-cart">Add to cart</button></div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/img/products/ไทรใบสักแคระ.webp" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">ไทรใบสักแคระ</h3><p class="product-price">50฿</p>
+                        <div class="product-actions"><button class="btn-details">View Details</button><button class="btn-add-cart">Add to cart</button></div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/img/products/พลูด่าง.webp" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">พลูด่าง</h3><p class="product-price">50฿</p>
+                        <div class="product-actions"><button class="btn-details">View Details</button><button class="btn-add-cart">Add to cart</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>Pheeraphat Meksuwan &copy; 2026 ต้นไม้บ้านสุวรรณ</p>
+    </footer>
+</body>
+</html>

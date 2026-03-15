@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>ต้นไม้บ้านสุวรรณ</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/logo_1.png" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    
+    <link href="css/Style.css" rel="stylesheet" />
+    <!-- Script -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="nav-brand" href="#">
+                <img src="assets/icons/logo_1.png" alt="โลโก้ร้าน">
+                <span class="brand-name">ต้นไม้บ้านสุวรรณ</span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="#" class="active">หน้าหลัก</a></li>
+                <li><a href="#">เกี่ยวกับเรา</a></li>
+                <li class="dropdown">
+                    <a href="#">หมวดหมู่ต้นไม้ <i class="bi-chevron-down" style="font-size: 12px;"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">ไม้คลุมดิน</a></li>
+                        <li><a href="#">ไม้ล้มลุก</a></li>
+                        <li><a href="#">ไม้พุ่ม</a></li>
+                        <li><a href="#">ไม้ยืนต้น</a></li>
+                        <li><a href="#">ไม้เลื้อย</a></li>
+                        <li><a href="#">ไม้ประดับอื่น ๆ</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="ค้นหาสินค้าที่ต้องการ..."oninput="searchProduct()">
+                    <button class="btn-search"onclick="searchProduct()"><i class="bi-search"></i></button>
+                </div>
+                
+                <a href="Cart.html" class="btn-cart" target="_blank">
+                    <i class="bi-cart-fill"></i> Cart
+                    <span class="cart-badge">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header class="main-header">
+        </header>
+    <!-- Product Section -->
+    <section class="product-section">
+        <div class="container">
+            <div class="product-grid" id="product-container">
+                </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>Pheeraphat Meksuwan &copy; 2026 ต้นไม้บ้านสุวรรณ</p>
+    </footer>
+
+    
+</body>
+</html>
